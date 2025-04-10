@@ -5,9 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import { ListGroup } from 'react-bootstrap';
 import Masonry from 'react-masonry-css';
-
 import { projectsList } from '../../assets/datas';
 import { getImage } from '../../utils/getImage';
+import './Projects.scss';
 
 export default function Projects() {
   const breakpointColumnsObj = {
