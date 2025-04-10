@@ -1,0 +1,25 @@
+.skill-icon {
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-text {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.skill-item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    .skill-icon {
+      color: #0d6efd;
+      transform: scale(1.1);
+    }
+
+    .skill-text {
+      color: #0d6efd;
+    }
+  }
+}

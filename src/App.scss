@@ -1,0 +1,51 @@
+@import 'bootstrap/scss/bootstrap';
+
+section {
+  scroll-margin-top: 56px;
+
+  @media (max-width: 767.98px) {
+    scroll-margin-top: 200px;
+  }
+}
+
+.section-presentation {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+
+  @media (max-width: 767.98px) {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -1rem; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 1rem; /* gutter size */
+  background-clip: padding-box;
+}
+
+.animated-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.animated-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.animated-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
