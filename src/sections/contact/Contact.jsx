@@ -32,7 +32,12 @@ export default function Contact() {
   return (
     <section id="contact" className="py-5" data-aos="fade-down">
       <Container>
-        <h2 className="text-center">Contact</h2>
+        <h2 className="text-center mb-5">Contact</h2>
+        <p className="text-center mb-5">
+          Que ce soit pour discuter d'une opportunité, me faire part d’une idée
+          ou simplement échanger autour du code, n’hésite pas à me contacter. Je
+          suis toujours partant pour relever de nouveaux défis techniques !
+        </p>
         <Row>
           <Col>
             <Fade in={showSuccess}>
