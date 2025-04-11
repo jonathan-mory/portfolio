@@ -29,7 +29,7 @@ export default function Skills() {
                     {skill.logo && (
                       <FontAwesomeIcon
                         icon={skill.logo}
-                        className="display-3 skill-icon fa-fw"
+                        className="display-1 skill-icon fa-fw"
                       />
                     )}
                     <span className="fs-4 skill-text">{skill.name}</span>

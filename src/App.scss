@@ -1,5 +1,16 @@
 @import 'bootstrap/scss/bootstrap';
 
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 991.99px) {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
 .section-presentation {
   padding-top: 15vh;
   padding-bottom: 15vh;

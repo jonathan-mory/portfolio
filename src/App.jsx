@@ -4,6 +4,7 @@ import Contact from './sections/contact/Contact';
 import Presentation from './sections/presentation/Presentation';
 import Projects from './sections/projects/Projects';
 import Skills from './sections/skills/Skills';
+import Footer from './components/footer/Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,10 +18,13 @@ function App() {
   return (
     <>
       <Header />
-      <Presentation />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main>
+        <Presentation />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }

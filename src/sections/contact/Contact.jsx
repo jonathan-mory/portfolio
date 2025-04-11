@@ -30,7 +30,11 @@ export default function Contact() {
   }, [state.succeeded]);
 
   return (
-    <section id="contact" className="py-5" data-aos="fade-down">
+    <section
+      id="contact"
+      className="py-5 bg-dark text-white"
+      data-aos="fade-down"
+    >
       <Container>
         <h2 className="text-center mb-5">Contact</h2>
         <p className="text-center mb-5">
@@ -102,7 +106,7 @@ export default function Contact() {
 
                     <Button
                       type="submit"
-                      variant="dark"
+                      variant="light"
                       disabled={state.submitting}
                       className="animated-button"
                     >

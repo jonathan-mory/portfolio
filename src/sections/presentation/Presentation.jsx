@@ -13,18 +13,15 @@ export default function Presentation() {
     >
       <Container>
         <Row className="align-items-center">
-          {/* Image - toujours ronde, prend toute la largeur sous lg */}
           <Col xs={12} lg={6} className="order-lg-2 mb-5 mb-lg-0">
             <Image
               src="/photo_cv_jonathan_mory.webp"
               alt="Jonathan Mory"
               fluid
               roundedCircle
-              className="w-100 w-lg-75"
             />
           </Col>
 
-          {/* Texte + boutons */}
           <Col
             xs={12}
             lg={6}
@@ -40,59 +37,19 @@ export default function Presentation() {
               le code, je serais ravi de transformer vos idées en solutions
               concrètes.
             </p>
-
-            {/* Version desktop/tablette ≥ md : inline */}
-            <Container className="p-0 gap-3 d-none d-md-flex justify-content-center justify-content-lg-start flex-wrap">
-              <Button
-                href="https://github.com/jonathan-mory"
-                variant="dark"
-                className="animated-button"
-                size="lg"
-              >
-                GitHub
-              </Button>
-              <Button
-                href="https://www.linkedin.com/in/jonathan-mory/"
-                variant="dark"
-                className="animated-button"
-                size="lg"
-              >
-                LinkedIn
-              </Button>
-              <Button
-                href="/CV_Jonathan_Mory.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="dark"
-                className="animated-button"
-                size="lg"
-              >
-                CV
-              </Button>
-              <Button
-                href="mailto:jomory@orange.fr"
-                variant="dark"
-                className="animated-button"
-                size="lg"
-              >
-                E-mail
-              </Button>
-            </Container>
-
-            {/* Version mobile < md : 2 par 2 */}
-            <Container className="p-0 d-md-none">
-              <Row className="g-2">
-                <Col xs={6}>
+            <Container className="p-0">
+              <Row className="g-2 justify-content-center justify-content-lg-start">
+                <Col xs={6} md={3}>
                   <Button
                     href="https://github.com/jonathan-mory"
                     variant="dark"
-                    className="animated-button w-100"
+                    className="animated-button w-100 "
                     size="lg"
                   >
                     GitHub
                   </Button>
                 </Col>
-                <Col xs={6}>
+                <Col xs={6} md={3}>
                   <Button
                     href="https://www.linkedin.com/in/jonathan-mory/"
                     variant="dark"
@@ -102,7 +59,7 @@ export default function Presentation() {
                     LinkedIn
                   </Button>
                 </Col>
-                <Col xs={6}>
+                <Col xs={6} md={3}>
                   <Button
                     href="/CV_Jonathan_Mory.pdf"
                     target="_blank"
@@ -112,16 +69,6 @@ export default function Presentation() {
                     size="lg"
                   >
                     CV
-                  </Button>
-                </Col>
-                <Col xs={6}>
-                  <Button
-                    href="mailto:jomory@orange.fr"
-                    variant="dark"
-                    className="animated-button w-100"
-                    size="lg"
-                  >
-                    E-mail
                   </Button>
                 </Col>
               </Row>
